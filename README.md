@@ -18,18 +18,18 @@ To parse `.graphml` and `.json` we depend on "org.jgrapht:jgrapht-core:1.3.1", "
 All the actions related to the CompositionalPlanning mod are accessed via the `/assembly ...` command followed by arguments (in Minecraft press <kbd>t</kbd> to open the command prompt).  
 Subsequently all the commands are listed and described:
 
-- ` \assembly columns` - Execute the assembly of the columns model in parallel.  
+- `\assembly columns` - Execute the assembly of the columns model in parallel.  
 
-- ` \assembly house` - Execute the assembly of the house model in parallel.  
+- `\assembly house` - Execute the assembly of the house model in parallel.  
 
-- ` \assembly <C:\some_path\filename>` - Execute the assembly of the specified file(s). `<C:\some_path\filename>` is resolved to `<C:\some_path\filename>.graphml` for the connectivity graph and `<C:\some_path\filename>.json` - which describes the corresponding schedule.  
+- `\assembly <C:\some_path\filename>` - Execute the assembly of the specified file(s). `<C:\some_path\filename>` is resolved to `<C:\some_path\filename>.graphml` for the connectivity graph and `<C:\some_path\filename>.json` - which describes the corresponding schedule.  
 
-- ` \assembly workers <number>` - Set the number of available workers. The default value is 16.  
+- `\assembly workers <number>` - Set the number of available workers. The default value is 16.  
 
-- ` \assembly ticks <number>` - Set the [tick](https://minecraft.gamepedia.com/Tick) interval at which a new assembly step is to be performed. The default value is 20 (= 1 second). The minimum value is 1 ( = 0.05 seconds) and the maximum value which can be set is 2000 (= 100 seconds).  
+- `\assembly ticks <number>` - Set the [tick](https://minecraft.gamepedia.com/Tick) interval at which a new assembly step is to be performed. The default value is 20 (= 1 second). The minimum value is 1 ( = 0.05 seconds) and the maximum value which can be set is 2000 (= 100 seconds).  
 
-- ` \assembly <columns|house> <parallel|sequence>` - Execute the assembly of the specified model (`columns` or `house`) in the specified mode (in `parallel` or in `sequence`); for instance, to build the house in parallel the command `\assembly house parallel` can be used or its shorthand version `\assembly house`.  
+- `\assembly <columns|house> <parallel|sequence>` - Execute the assembly of the specified model (`columns` or `house`) in the specified mode (in `parallel` or in `sequence`); for instance, to build the house in parallel the command `\assembly house parallel` can be used or its shorthand version `\assembly house`.  
 
-- ` \assembly <C:\some_path\connectivityGraph>.graphml <C:\some_path\schedule>.json` - Execute the assembly of a model described in a `.graphml` file and its corresponding schedule specified in a `.json` file.  
+- `\assembly <C:\some_path\connectivityGraph>.graphml <C:\some_path\schedule>.json` - Execute the assembly of a model described in a `.graphml` file and its corresponding schedule specified in a `.json` file.  
 
-- ` \assembly origin <x> <y> <z>` - Set the origin coordinates at which the assembly shall be performed. The default coordinates are (0,4,0) which corresponds to the center at the ground level of a flat world. Press <kbd>F3</kbd> to display debug information and your current position. You can [teleport](https://minecraft.gamepedia.com/Commands/tp) yourself to a position with the command `/tp x y z`; e.g. `/tp -10 5 10`.  
+- `\assembly origin <x> <y> <z>` - Set the origin coordinates at which the assembly shall be performed. The default coordinates are (0,4,0) which corresponds to the center at the ground level of a flat world. Press <kbd>F3</kbd> to display debug information and your current position. You can [teleport](https://minecraft.gamepedia.com/Commands/tp) yourself to a position with the command `/tp x y z`; e.g. `/tp -10 5 10`.  
