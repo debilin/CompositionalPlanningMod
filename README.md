@@ -1,4 +1,4 @@
-This is a fork of [Compositional Planning Mod](https://github.com/CompositionalPlanning/CompositionalPlanning.git)
+This is a fork of [Compositional Planning Mod](https://github.com/CompositionalPlanning/CompositionalPlanning/tree/master/compositionalPlanningMod)
 
 # Assembly Planning Mod
 This mod simulates the assembly of LDraw models in Minecraft with string diagrams and is based on the paper [String Diagrams for Assembly Planning](https://arxiv.org/abs/1909.10475). 
